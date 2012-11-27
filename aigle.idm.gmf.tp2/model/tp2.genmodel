@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/aigle.idm.gmf.tp2/src"
+    modelPluginID="aigle.idm.gmf.tp2" modelName="Tp2" importerID="org.eclipse.emf.importer.ecore"
+    copyrightFields="false">
+  <foreignModel>tp2.ecore</foreignModel>
+  <genPackages prefix="Tp2" basePackage="aigle.idm.gmf" disposableProviderFactory="true"
+      ecorePackage="tp2.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="tp2.ecore#//Cout">
+      <genEnumLiterals ecoreEnumLiteral="tp2.ecore#//Cout/faible"/>
+      <genEnumLiterals ecoreEnumLiteral="tp2.ecore#//Cout/moyen"/>
+      <genEnumLiterals ecoreEnumLiteral="tp2.ecore#//Cout/eleve"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="tp2.ecore#//Nature">
+      <genEnumLiterals ecoreEnumLiteral="tp2.ecore#//Nature/legume"/>
+      <genEnumLiterals ecoreEnumLiteral="tp2.ecore#//Nature/viande"/>
+      <genEnumLiterals ecoreEnumLiteral="tp2.ecore#//Nature/poisson"/>
+      <genEnumLiterals ecoreEnumLiteral="tp2.ecore#//Nature/condiment"/>
+      <genEnumLiterals ecoreEnumLiteral="tp2.ecore#//Nature/fruit"/>
+      <genEnumLiterals ecoreEnumLiteral="tp2.ecore#//Nature/feculent"/>
+      <genEnumLiterals ecoreEnumLiteral="tp2.ecore#//Nature/oeuf"/>
+      <genEnumLiterals ecoreEnumLiteral="tp2.ecore#//Nature/matiereGrasse"/>
+    </genEnums>
+    <genClasses ecoreClass="tp2.ecore#//LivreRecettes">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tp2.ecore#//LivreRecettes/recettes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tp2.ecore#//LivreRecettes/ingredients"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tp2.ecore#//LivreRecettes/departements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tp2.ecore#//LivreRecettes/vins"/>
+    </genClasses>
+    <genClasses ecoreClass="tp2.ecore#//Recette">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tp2.ecore#//Recette/nom"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tp2.ecore#//Recette/cout"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tp2.ecore#//Recette/composes"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tp2.ecore#//Recette/origineRegionale"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference tp2.ecore#//Recette/vins"/>
+    </genClasses>
+    <genClasses ecoreClass="tp2.ecore#//Ingredient">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tp2.ecore#//Ingredient/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tp2.ecore#//Ingredient/nature"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tp2.ecore#//Ingredient/prix"/>
+    </genClasses>
+    <genClasses ecoreClass="tp2.ecore#//Vin">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tp2.ecore#//Vin/nom"/>
+    </genClasses>
+    <genClasses ecoreClass="tp2.ecore#//Compose">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tp2.ecore#//Compose/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tp2.ecore#//Compose/quantite"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tp2.ecore#//Compose/_ingredient"/>
+    </genClasses>
+    <genClasses ecoreClass="tp2.ecore#//Localisation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tp2.ecore#//Localisation/name"/>
+    </genClasses>
+    <genClasses ecoreClass="tp2.ecore#//Bouteille">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference tp2.ecore#//Bouteille/_vin"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tp2.ecore#//Bouteille/nom"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute tp2.ecore#//Bouteille/prix"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/aigle.idm.gmf.tp2/model/tp2.genmodel
+gmf_dashboard/domainModel=platform\:/resource/aigle.idm.gmf.tp2/model/tp2.ecore
+gmf_dashboard/generationModel=platform\:/resource/aigle.idm.gmf.tp2/model/tp2.gmfgen
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/aigle.idm.gmf.tp2/model/tp2.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/aigle.idm.gmf.tp2/model/tp2.gmfmap
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/aigle.idm.gmf.tp2/model/tp2.gmftool

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tp2:LivreRecettes xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:tp2="http:///recette1-tp2-v0">
+  <recettes nom="Steack Frites" origineRegionale="//@departements.0">
+    <composes quantite="5" _ingredient="//@ingredients.0"/>
+    <composes quantite="10" _ingredient="//@ingredients.1"/>
+    <vins nom="Julienas"/>
+  </recettes>
+  <recettes nom="Potee Auvergnate" origineRegionale="//@departements.1">
+    <composes quantite="60" _ingredient="//@ingredients.2"/>
+    <composes quantite="20" _ingredient="//@ingredients.3"/>
+    <composes quantite="20" _ingredient="//@ingredients.4"/>
+    <vins nom="Chardonnay"/>
+  </recettes>
+  <ingredients name="Pomme De Terre"/>
+  <ingredients name="Steack" nature="condiment"/>
+  <ingredients name="Chou"/>
+  <ingredients name="Carottes"/>
+  <ingredients name="Chou"/>
+  <departements name="Paris"/>
+  <departements name="Auvergne"/>
+  <vins nom="Beaujolais"/>
+  <vins nom="Sylvaner"/>
+  <vins nom="Saint Poursan"/>
+</tp2:LivreRecettes>
